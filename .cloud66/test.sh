@@ -1,2 +1,2 @@
- echo "TEST1234" > $(ENVKEY) > /tmp/testoutput.txt
+ echo "TEST1234" > $(ENVKEY) > $STACK_PATH/testoutput.txt
  
