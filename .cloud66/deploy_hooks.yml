@@ -1,4 +1,11 @@
-first_thing:
-- command: ls -la /
+#first_thing:
+#- command: ls -la /
+#  target: any
+#  execute: true
+after_haproxy:
+  source: /.cloud66/test.sh
+  destination: /tmp
   target: any
+  sudo: true
   execute: true
+  apply_during: all
