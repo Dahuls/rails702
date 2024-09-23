@@ -4,7 +4,7 @@
 #  execute: true
 after_haproxy:
   source: /.cloud66/test.sh
-  destination: $STACK_PATH/
+  destination: <%= ENV['STACK_PATH'] %>
   target: any
   sudo: true
   execute: true
