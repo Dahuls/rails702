@@ -2,7 +2,7 @@
 #- command: ls -la /
 #  target: any
 #  execute: true
-after_haproxy:
+before_haproxy:
   source: /.cloud66/test.sh
   destination: <%= ENV['STACK_PATH'] %>
   target: any
